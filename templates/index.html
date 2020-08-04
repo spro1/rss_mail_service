@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rss 메일링 서비스</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/common.css">
+
+</head>
+<body>
+<div class="content">
+    <div class="top-content">
+        <h3 class="top-desc">이메일을 등록하고 최신 IT 글을 받아보세요.</h3>
+        <form id="email_form" name="email_form" method="post" action="/insert_email">
+            <div class="form-group container">
+                <input name="email" type="email" class="form-control col-md-6" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <button type="submit" class="btn btn-success col-md-1">등록하기</button>
+                <small id="emailHelp" class="form-text text-muted">매일 오전 10시 새로운 글이 메일로 발송됩니다.</small>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+
+    </div>
+</div>
+
+
+
+
+
+    <footer class="footer">
+        <p>Copyright © 2020 YUNDOL. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

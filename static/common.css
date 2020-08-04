@@ -1,0 +1,47 @@
+/* common */
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 50px;
+}
+
+.top-content{
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.form-control{
+    margin: 0 auto 10px;
+
+}
+.top-desc{
+    padding-top: 100px;
+}
+
+.container{
+    text-align:center;
+}
+
+/* footer */
+.footer{
+    font-size: 14px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+	padding: 15px 0;
+    margin-top: 20px;
+    position: absolute;
+}
