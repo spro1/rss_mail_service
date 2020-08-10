@@ -28,5 +28,4 @@ def insert_email():
 
 
 if __name__ == '__main__':
-    app.secret_key = "123"
-    app.run(debug=True)
+    app.run("0.0.0.0", debug=True, ssl_context=('./cert/server.crt','./cert/server.key'))
