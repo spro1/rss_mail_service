@@ -19,6 +19,7 @@ https://rssenjoy.com/
 - rss smtp 메일 보내기
 - 메일, 웹 디자인
 - 이메일 검증 추가
+- 로그 추가
 
 사용 RSS 리스트
 - 한달내 활동 기록이 있는 기업블로그 추가
@@ -41,3 +42,10 @@ https://rssenjoy.com/
 향후 추가 사항
 - 개별 rss 구독
 - 메일링 등록 시 확인 메일
+
+사용 목록
+- GCL
+- Let's encrpyt
+- cloudflare
+- gabia domain
+- google analytics
