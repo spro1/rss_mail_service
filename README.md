@@ -2,20 +2,21 @@
 
 개발환경
 - flask
-- sqlite3
+- sqlite -> mongodb
 - Google Cloud
 
 
 완료 사항
 - email 입력 db input 
+- rss 리스트 show
 
 추가 개발 사항
-- rss 리스트 show
 - 최신 rss 자료
 - 메일링 리스트 제거
 - 메일 등록 시 등록확인 메세지 
 - 메일 중복 시 중복 메세지
 - rss smtp 메일 스크립트
+- 디자인
 
 사용 RSS 리스트
 - 한달내 활동 기록이 있는 기업블로그
