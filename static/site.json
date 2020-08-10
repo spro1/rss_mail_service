@@ -1,0 +1,48 @@
+{
+  "site" : [
+    {
+      "author": "카카오",
+      "src" :  "https://tech.kakao.com/feed/"
+    },
+    {
+      "author": "네이버",
+      "src" :  "http://d2.naver.com/d2.atom"
+    },
+    {
+      "author": "라인",
+      "src" :  "https://engineering.linecorp.com/ko/feed/"
+    },
+    {
+      "author": "우아한형제들",
+      "src" :  "https://woowabros.github.io/feed.xml"
+    },
+    {
+      "author": "당근마켓",
+      "src" :  "https://medium.com/feed/daangn"
+    },
+    {
+      "author": "멋쟁이 사자처럼",
+      "src" :  "https://brunch.co.kr/rss/@@2YH6"
+    },
+    {
+      "author": "레진 기술 블로그",
+      "src" :  "http://tech.lezhin.com"
+    },
+    {
+      "author": "Airbnb Engineering Medium",
+      "src" :  "https://medium.com/feed/airbnb-engineering"
+    },
+    {
+      "author": "Netflix Tech Blog",
+      "src" :  "https://netflixtechblog.com/feed"
+    },
+    {
+      "author": "Riot Games Tech Blog",
+      "src" :  "https://technology.riotgames.com/news/feed"
+    },
+    {
+      "author": "Grab Tech",
+      "src" :  "https://engineering.grab.com/feed.xml"
+    }
+  ]
+}

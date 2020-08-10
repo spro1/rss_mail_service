@@ -1,39 +1,32 @@
 from flask import Flask,  render_template, request, redirect, url_for
-from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
+from database.db import mongo_connect
+import json
 
 app = Flask(__name__)
 CORS(app)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test.db"
-db = SQLAlchemy(app)
-
-
-class Email(db.Model):
-    """create email list table"""
-    id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(80), unique=True)
-
-    def __init__(self, email):
-        self.email = email
-
 
 @app.route("/index")
 @app.route('/')
-def hello_world():
-    return render_template("index.html")
+def index():
+    site_list = json.loads(open("static/site.json", "r", encoding="utf-8").read())
+    return render_template("index.html", site_list=site_list["site"])
 
 
 @app.route("/insert_email", methods=["POST"])
 def insert_email():
     if request.method == "POST":
+        client = mongo_connect()
+        collection = client.rss_mail_service.email
         email = request.form["email"]
-        new_email = Email(email=email)
-        db.session.add(new_email)
-        db.session.commit()
+        if collection.find_one({"email": email}) is None:
+            collection.insert({"email": email, "on": 1})
+        else:
+            print("already")
+        client.close()
     return redirect('/')
 
 
 if __name__ == '__main__':
-    db.create_all()
     app.secret_key = "123"
     app.run(debug=True)

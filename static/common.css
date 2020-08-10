@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'TTTogether'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Cafe24Simplehae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
 /* common */
 html {
     height: 100%;
@@ -5,7 +17,12 @@ html {
     padding: 0;
 }
 
+body{
+    font-family: 'InfinitySans-RegularA1', serif;
+}
+
 .content{
+    font-family: 'InfinitySans-RegularA1', serif;
     position: relative;
     min-height: 100%;
     padding-bottom: 50px;
@@ -33,6 +50,103 @@ html {
     text-align:center;
 }
 
+.mail-desc{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+/* box */
+.box__top__border-blue{
+    border-top : 3px solid #6EA2D5;
+}
+
+/* box header */
+.box__header {
+    color : #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+.box__header.with-border {
+    border-bottom:1px solid #f4f4f4;
+}
+
+.box__header>.box-tools {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.box__header>h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.box__header> .fa,
+.box__header> .giyphicon,
+.box__header> .ion,
+.box__header> .box-title {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    line-height : 1;
+}
+
+.box__header__top__border {
+    border-top: 2px solid #d8d8d8;
+}
+
+
+.box__content {
+    overflow: hidden;
+}
+
+.box__content.with-padding{
+    padding: 10px;
+}
+
+.box__content-description {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box__content h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding : 0;
+}
+.table{
+    table-layout:fixed;
+}
+
+.table>thead>tr,
+.table>tbody>tr {
+    font-size: 12px;
+}
+
+.table>thead>tr>th {
+    border-bottom: 2px solid #f4f4f4
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
 /* footer */
 .footer{
     font-size: 14px;
@@ -42,6 +156,5 @@ html {
     width: 100%;
     height: 50px;
 	padding: 15px 0;
-    margin-top: 20px;
-    position: absolute;
+    margin-top: 40px;
 }

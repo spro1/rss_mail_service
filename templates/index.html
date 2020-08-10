@@ -14,13 +14,33 @@
         <form id="email_form" name="email_form" method="post" action="/insert_email">
             <div class="form-group container">
                 <input name="email" type="email" class="form-control col-md-6" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                <button type="submit" class="btn btn-success col-md-1">등록하기</button>
+                <button type="submit" class="btn btn-success">등록하기</button>
                 <small id="emailHelp" class="form-text text-muted">매일 오전 10시 새로운 글이 메일로 발송됩니다.</small>
+
             </div>
         </form>
     </div>
     <div class="container">
-
+        <p class="mail-desc">RSS 추가 요청은 yundol@kakao.com으로 문의메일 주세요</p>
+        <div class="row col-md-12">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="box box__top__border-blue bg-white">
+                    <div class="box__header with-border">
+                        <h3 class="box-title">RSS 사이트 리스트</h3>
+                    </div>
+                    <table class="table table-striped">
+                        <tbody>
+                            {% for item in site_list %}
+                                <tr>
+                                    <td style="cursor:pointer" onclick="window.open('{{ item.src }}'),'',''">{{ item.author }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
