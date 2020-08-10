@@ -1,5 +1,5 @@
-import sqlite3
+import pymongo
 
-conn = sqlite3.connect("test.db")
-conn.execute("CREATE TABLE email (id integer pk, email String(80) unique)")
-conn.commit()
+def mongo_connect():
+    client = pymongo.MongoClient("mongodb+srv://yskim:<password>@cluster0.mxqeo.gcp.mongodb.net/test?retryWrites=true&w=majority")
+    return client
