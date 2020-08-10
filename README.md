@@ -1,10 +1,11 @@
 # IT 최신 RSS 메일링 서비스 
 
+https://rssenjoy.com/
+
 개발환경
 - flask
-- sqlite -> mongodb
+- sqlite -> mongodb atlas
 - Google Cloud
-
 
 완료 사항
 - email 입력 db input 
@@ -15,11 +16,12 @@
 - 메일링 리스트 제거
 - 메일 등록 시 등록확인 메세지 
 - 메일 중복 시 중복 메세지
-- rss smtp 메일 스크립트
-- 디자인
+- rss smtp 메일 보내기
+- 메일, 웹 디자인
+- 이메일 검증 추가
 
 사용 RSS 리스트
-- 한달내 활동 기록이 있는 기업블로그
+- 한달내 활동 기록이 있는 기업블로그 추가
 - IT 뉴스 사이트 추가 예정
 
 | author | address|
