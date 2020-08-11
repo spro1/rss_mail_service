@@ -4,26 +4,31 @@ https://rssenjoy.com/
 
 개발환경
 - flask
+- nginx
 - sqlite -> mongodb atlas
 - Google Cloud
 
 완료 사항
 - email 입력 db input 
-- rss 리스트 show
-
-추가 개발 사항
-- 최신 rss 자료
-- 메일링 리스트 제거
+~~- rss 리스트 show~~
 - 메일 등록 시 등록확인 메세지 
 - 메일 중복 시 중복 메세지
+- 웹로그 추가
+- IT 뉴스 사이트 추가
+- 최신 rss 자료 테이블 추가
+
+추가 개발 사항
+- 메일링 리스트 제거 추가(인증 권한)
 - rss smtp 메일 보내기
 - 메일, 웹 디자인
 - 이메일 검증 추가
 - 로그 추가
+- 추천 글
 
 사용 RSS 리스트
 - 한달내 활동 기록이 있는 기업블로그 추가
-- IT 뉴스 사이트 추가 예정
+- 해외 기업 블로그 search&add
+
 
 | author | address|
 |-------|-------|
@@ -41,7 +46,8 @@ https://rssenjoy.com/
 
 향후 추가 사항
 - 개별 rss 구독
-- 메일링 등록 시 확인 메일
+- 메일링 등록 시 확인 메일(인증 권한)
+- 컨텐츠 뉴스레터
 
 사용 목록
 - GCL
