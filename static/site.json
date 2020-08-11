@@ -43,6 +43,14 @@
     {
       "author": "Grab Tech",
       "src" :  "https://engineering.grab.com/feed.xml"
+    },
+    {
+	"author" : "CIO KOREA",
+	"src" : "http://www.ciokorea.com/rss/feed/index.php"
+    },
+    {
+	"author" : "ITWorld KOREA",
+	"src" : "http://www.itworld.co.kr/rss/feed/index.php"
     }
   ]
 }

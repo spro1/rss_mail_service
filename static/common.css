@@ -55,6 +55,11 @@ body{
     text-align: center;
     font-size: 12px;
 }
+
+.dataTables_length{
+	float: left;
+}
+
 /* box */
 .box__top__border-blue{
     border-top : 3px solid #6EA2D5;
