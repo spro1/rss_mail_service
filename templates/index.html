@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Enjoy IT RSS</title>
-
+    	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.bootstrap4.min.css">
@@ -11,6 +12,7 @@
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+	<script src="https://kit.fontawesome.com/0cb8db593d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="static/common.css">
 
 	<script type="text/javascript" class="init">
@@ -57,22 +59,31 @@ $(document).ready(function() {
             <div class="form-group container">
                 <input name="email" type="email" class="form-control col-md-6" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                 <button type="submit" class="btn btn-success">등록하기</button>
-                <small id="emailHelp" class="form-text text-muted">매일 오전 10시 새로운 글이 메일로 발송됩니다.</small>
+                <small id="emailHelp" class="form-text text-muted">매일 오전 9시에 글을 업데이트하고 오전 10시에 메일로 발송해드립니다.</small>
 
             </div>
         </form>
     </div>
     <div class="container">
-        <p class="mail-desc">RSS 추가 요청은 yundol@kakao.com으로 문의메일 주세요</p>
+	    <p class="mail-desc">RSS 추가 요청은 yundol@kakao.com으로 문의메일 주세요</p>
+	    <span class="badge badge-dark">update : {{up_day}}</span>
 	<div class="row col-md-12 status-box">
-		<div class="col-md-4">
-			오늘 올라온 글
+		<div class="col-md-4 status-small-box left-content">
+			<div class="status-box-content">
+				<h6>신규 게시글</h6>
+		<h2>{{ new_post | length }}</h2>
+			</div>
 		</div>
-		<div class="col-md-4">
-			등록된 총 게시글
+		<div class="col-md-4 status-small-box mid-content">
+			<div class="status-box-content">
+				<h6>등록된 총 게시글</h6>
+			<h2>{{ post_list|length }}</h2>
+			</div>
 		</div>
-		<div class="col-md-4">
-			넣을꺼 생각중
+		<div class="col-md-4 status-small-box right-content">
+			<div class="status-box-content">
+				<h6>넣을꺼 생각중</h6>
+			</div>
 		</div>
 	</div>
         <div class="row col-md-12">

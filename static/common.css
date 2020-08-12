@@ -4,6 +4,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 400;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
 @font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'TTTogether'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
@@ -22,7 +30,7 @@ body{
 }
 
 .content{
-    font-family: 'InfinitySans-RegularA1', serif;
+    font-family: 'NanumBarunGothic', serif;
     position: relative;
     min-height: 100%;
     padding-bottom: 50px;
@@ -60,6 +68,29 @@ body{
 	float: left;
 }
 
+/* status box */
+.border-left-blue{
+	border-left: .25rem solid #4e73df;
+}
+
+.left-content{
+    padding: 30px 50px 30px 0;
+}
+
+.mid-content{
+    padding: 30px 25px 30px 25px;
+}
+
+.right-content{
+    padding: 30px 0 30px 50px;
+}
+
+.status-box-content{
+	border: 1.5px solid #e9e9e9;
+	border-radius: 5px;
+	height:100px;
+	padding:5px;
+}
 /* box */
 .box__top__border-blue{
     border-top : 3px solid #6EA2D5;

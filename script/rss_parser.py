@@ -2,7 +2,7 @@ import requests
 import datetime
 import xml.etree.ElementTree as elemTree
 import sys
-sys.path.append("..")
+sys.path.insert(0, "/home/kos511019/rss_mail_service")
 
 from database.db import mongo_connect
 

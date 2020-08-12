@@ -3,6 +3,7 @@ from flask_cors import CORS
 from database.db import mongo_connect
 import json
 import pymongo
+import datetime
 
 app = Flask(__name__)
 CORS(app)
@@ -13,8 +14,15 @@ def index():
     client = mongo_connect()
     site_list = json.loads(open("static/site.json", "r", encoding="utf-8").read())
     post_list = client.rss_mail_service.post.find()
+    now = datetime.datetime.now()
+    cnow = now.replace(hour=9, minute=0, second=0)
+    new_post = client.rss_mail_service.post.find({"date":{"$lt":cnow}})
     client.close()
-    return render_template("index.html", site_list=site_list["site"], post_list=post_list)
+    return render_template("index.html",
+            site_list=site_list["site"],
+            post_list=list(post_list),
+            new_post=list(new_post),
+            today = now, up_day = cnow.strftime('%Y-%m-%d %H:%M:%S'))
 
 
 @app.route("/insert_email", methods=["POST"])
