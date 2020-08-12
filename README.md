@@ -17,6 +17,7 @@ https://rssenjoy.com/
 - IT 뉴스 사이트 추가
 - 최신 rss 자료 테이블 추가
 - 일일 신규 글, 총 저장 글 통계 박스 추가
+- favicon 추가
 
 
 추가 개발 사항
