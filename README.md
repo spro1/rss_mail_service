@@ -21,7 +21,9 @@ https://rssenjoy.com/
 
 테스트 중
 - rss smtp 메일 보내기
+
   ~~- bcc 메일 보내기~~
+  
   ~~- gmail smtp 사용~~
   - 메일 템플릿 디자인
   
